@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 江湖 - 详情（有规图） -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_wrp"
+    style="@style/page_wrp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rune_draw_viewpager">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <!--<ListView
+            android:id="@+id/rune_draw_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            android:divider="#ffffffff"></ListView>
+
+        <ListView
+            android:visibility="gone"
+            android:id="@+id/rune_draw_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            android:divider="#ffffffff"></ListView>-->
+
+
+        <LinearLayout
+            android:id="@+id/context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="15dp"
+            android:orientation="horizontal"
+            android:background="#BF000000">
+            <com.lotteryapp.CircleImageView
+                android:id="@+id/per_center_btn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/photo"/>
+
+            <LinearLayout
+                android:id="@+id/context_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:text="天涯石头"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/top_open"/>
+                </LinearLayout>
+                <TextView
+                    style="@style/content_details"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:text="2323期123头567尾巴"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 返回 -->
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/back_white"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rune_detail_bg"/>
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rune_detail_bg"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/current_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:text="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:text=" &#047; "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:text="2"/>
+        </LinearLayout>
+
+        <!-- 转发 -->
+        <LinearLayout
+            android:id="@+id/share_wrp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_above="@+id/good"
+            android:background="@drawable/rune_detail_bg"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/share_white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="120"/>
+        </LinearLayout>
+
+        <!-- 点赞 -->
+        <LinearLayout
+            android:id="@+id/good"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_above="@+id/follow_up"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rune_detail_bg">
+            <ImageView
+                android:id="@+id/good_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/good_white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="0"/>
+        </LinearLayout>
+
+        <!-- 跟帖 -->
+        <LinearLayout
+            android:id="@+id/follow_up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_above="@+id/context"
+            android:layout_marginBottom="65dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rune_detail_bg">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/follow_up_white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:text="0"/>
+        </LinearLayout>
+
+        <!-- 详情内容 -->
+        <LinearLayout
+            android:id="@+id/context_wrp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:background="#666666"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <com.lotteryapp.CircleImageView
+                    android:id="@+id/seven_photo"
+                    style="@style/photo_style"/>
+
+                <TextView
+                    android:id="@+id/seven_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    style="@style/name_style"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#ffffff"
+                    android:text="天涯石头"/>
+
+                <ImageView
+                    android:id="@+id/close_context"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/bottom_close"/>
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="66dp"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/seven_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/seven_content"
+                                style="@style/content_style"
+                                android:textColor="#ffffff"
+                                android:text="2323期123头567尾巴"/>
+
+                            <TextView
+                                android:id="@+id/seven_time"
+                                style="@style/time_style"
+                                android:text="2019年7月14日 16:06"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp"
+                            android:gravity="center"
+                            android:paddingBottom="10dp">
+                            <LinearLayout style="@style/share_style">
+                                <ImageView
+                                    style="@style/share_icon"
+                                    android:src="@mipmap/share_white"/>
+
+                                <TextView
+                                    android:id="@+id/share_num"
+                                    style="@style/share_num"
+                                    android:textColor="#ffffff"
+                                    android:text="1"/>
+                            </LinearLayout>
+
+                            <LinearLayout style="@style/share_style">
+                                <ImageView
+                                    style="@style/share_icon"
+                                    android:src="@mipmap/good_white"/>
+
+                                <TextView
+                                    android:id="@+id/good_num"
+                                    style="@style/share_num"
+                                    android:textColor="#ffffff"
+                                    android:text="520"/>
+                            </LinearLayout>
+
+                            <LinearLayout style="@style/share_style">
+                                <ImageView
+                                    style="@style/share_icon"
+                                    android:src="@mipmap/follow_up_white"/>
+
+                                <TextView
+                                    android:id="@+id/follow_up_num"
+                                    style="@style/share_num"
+                                    android:textColor="#ffffff"
+                                    android:text="3"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/detail_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+                        android:divider="#FFFFFFFF"
+                        android:layout_marginTop="10dp"></ListView>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

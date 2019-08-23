@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 江湖 - 发布 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/page_wrp">
+    <!-- 顶部标题栏 -->
+    <LinearLayout style="@style/head_wrp">
+        <ImageView
+            android:id="@+id/back"
+            style="@style/back_icon"/>
+
+        <TextView
+            style="@style/head_tit"
+            android:text="发布"/>
+
+        <Button
+            android:background="@drawable/mine_rules_btn"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:text="发布"/>
+    </LinearLayout>
+
+    <ScrollView style="@style/view_wrp">
+        <LinearLayout style="@style/mwv_wrp">
+
+            <EditText
+                android:background="@drawable/mine_recharge_input"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="15dp"
+                android:layout_margin="20dp"
+                android:gravity="top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:background="#ededed">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="添加画规"/>
+
+                <ImageView
+                    android:id="@+id/issue_add"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/rune_add_icon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_bottom_border"
+                android:padding="15dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="10dp"
+                        android:text="1.画规名称：千位、百位相同时"/>
+                    <TextView
+                        style="@style/time_style"
+                        android:text="2019年7月30 10:22"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/rune_del"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_bottom_border"
+                android:padding="15dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="10dp"
+                        android:text="2.画规名称：千位、百位相同时"/>
+                    <TextView
+                        style="@style/time_style"
+                        android:text="2019年7月30 10:22"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/rune_del"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_bottom_border"
+                android:padding="15dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="10dp"
+                        android:text="3.画规名称：千位、百位相同时"/>
+                    <TextView
+                        style="@style/time_style"
+                        android:text="2019年7月30 10:22"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/rune_del"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:background="#ededed"
+                android:text="发布类型"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="100dp"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:background="@drawable/rune_issue_type"
+                    android:text="七星彩\n（预测）"/>
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="1dp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="100dp"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:background="@drawable/rune_issue_type"
+                    android:text="排列五\n（预测）"/>
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="1dp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="100dp"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:background="@drawable/rune_issue_type"
+                    android:text="论道交流"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

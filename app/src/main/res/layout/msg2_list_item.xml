@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 推荐 - 列表 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+
+        <com.lotteryapp.CircleImageView
+            android:id="@+id/seven_photo"
+            style="@style/photo_style"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/seven_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    style="@style/name_style"
+                    android:text="天涯石头"/>
+                <LinearLayout
+                    android:id="@+id/seven_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/seven_content"
+                        style="@style/content_style"
+                        android:text="2323期123头567尾巴"/>
+
+                    <ImageView
+                        android:id="@+id/seven_draw"
+                        style="@style/img_style"
+                        android:src="@mipmap/draw_img"/>
+
+                    <TextView
+                        android:id="@+id/seven_time"
+                        style="@style/time_style"
+                        android:text="2019年7月14日 16:06"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+                <LinearLayout style="@style/share_style">
+                    <LinearLayout
+                        android:id="@+id/share_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            style="@style/share_icon"
+                            android:src="@mipmap/share"/>
+
+                        <TextView
+                            android:id="@+id/share_num"
+                            style="@style/share_num"
+                            android:text="1"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/share_style">
+                    <LinearLayout
+                        android:id="@+id/good_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/good_icon"
+                            style="@style/share_icon"
+                            android:src="@mipmap/good"/>
+
+                        <TextView
+                            android:id="@+id/good_num"
+                            style="@style/share_num"
+                            android:text="520"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/share_style">
+                    <LinearLayout
+                        android:id="@+id/follow_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            style="@style/share_icon"
+                            android:src="@mipmap/follow_up"/>
+
+                        <TextView
+                            android:id="@+id/follow_up_num"
+                            style="@style/share_num"
+                            android:text="3"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/list_bottom"/>
+</LinearLayout>

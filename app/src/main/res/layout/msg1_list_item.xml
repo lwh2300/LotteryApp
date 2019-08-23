@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 关注 - 列表 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_bottom_border"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.lotteryapp.CircleImageView
+            android:id="@+id/msg_photo"
+            style="@style/photo_style"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/msg_item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/name_style"
+                    android:text="天涯石头"/>
+
+                <ImageView
+                    android:id="@+id/msg_item2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/win"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/msg_item3"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:text="10中6"/>
+
+                <TextView
+                    android:id="@+id/msg_item4"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="right"
+                    android:text="最大连中3"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/msg_item6"
+                    style="@style/time_style"
+                    android:layout_weight="1"
+                    android:text="2019-07-22 15:00"/>
+
+                <!-- 取消 -->
+                <LinearLayout
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="20dp"
+                    android:layout_height="12dp"
+                    android:gravity="center"
+                    android:background="@drawable/close_border">
+                    <ImageView
+                        android:id="@+id/msg_item5"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:src="@mipmap/rune_close"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

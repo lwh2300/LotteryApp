@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 推荐 - 七星彩 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/page_wrp">
+
+    <ListView
+        android:id="@+id/msg2List"
+        style="@style/lv_style"></ListView>
+</LinearLayout>

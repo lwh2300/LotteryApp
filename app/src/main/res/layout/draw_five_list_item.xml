@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 画规 - 排列五 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_wrp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+    <LinearLayout
+        android:layout_width="85dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp">
+        <TextView
+            android:id="@+id/lv0_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:text="日"/>
+        <TextView
+            android:id="@+id/lv0_2"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="06-16"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/lv0_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="19160"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/list_item1"
+        android:id="@+id/lv1"
+        android:background="@drawable/draw_left_grey_border"
+        android:text="13"/>
+
+    <TextView
+        style="@style/list_item2"
+        android:id="@+id/lv2"
+        android:background="@drawable/draw_orange_left_border"
+        android:text="1"/>
+
+    <TextView
+        style="@style/list_item2"
+        android:id="@+id/lv3"
+        android:background="@drawable/draw_left_grey_border"
+        android:text="2"/>
+
+    <TextView
+        style="@style/list_item2"
+        android:id="@+id/lv4"
+        android:background="@drawable/draw_left_grey_border"
+        android:text="8"/>
+
+    <TextView
+        style="@style/list_item2"
+        android:id="@+id/lv5"
+        android:background="@drawable/draw_left_grey_border"
+        android:text="2"/>
+
+    <TextView
+        style="@style/list_item1"
+        android:id="@+id/lv6"
+        android:background="@drawable/draw_orange_left_border"
+        android:text="6"/>
+</LinearLayout>

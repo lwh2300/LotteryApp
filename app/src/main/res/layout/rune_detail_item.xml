@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/page_wrp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:background="@drawable/list_bottom_border">
+
+        <com.lotteryapp.CircleImageView
+            android:id="@+id/photo"
+            style="@style/photo_style"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    style="@style/name_style"
+                    android:text="张三"/>
+                <TextView
+                    android:id="@+id/content"
+                    style="@style/content_style"
+                    android:text="赞"/>
+
+                <TextView
+                    android:id="@+id/time"
+                    style="@style/time_style"
+                    android:text="2019年7月14日 16:06"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

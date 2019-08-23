@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 我的 - 充值 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/page_wrp">
+    <!-- 顶部标题栏 -->
+    <LinearLayout style="@style/head_wrp">
+        <ImageView
+            android:id="@+id/back_mine"
+            style="@style/back_icon"/>
+
+        <TextView
+            style="@style/head_tit"
+            android:text="充值"/>
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/mine_recharge_money"
+            android:text="10元"/>
+        <View
+            android:layout_width="20dp"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/mine_recharge_money"
+            android:text="30元"/>
+        <View
+            android:layout_width="20dp"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/mine_recharge_money"
+            android:text="50元"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="其他金额"/>
+
+        <EditText
+            android:background="@drawable/mine_recharge_input"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/mine_tip"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="充值说明"
+            android:textSize="12dp"
+            android:textColor="#2c2c2c"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+        <Button
+
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/mine_recharge_button"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:text="确定"/>
+    </LinearLayout>
+</LinearLayout>

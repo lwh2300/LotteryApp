@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 我的 - 有奖反馈 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/page_wrp">
+    <!-- 顶部标题栏 -->
+    <LinearLayout style="@style/head_wrp">
+        <ImageView
+            android:id="@+id/feedback_back"
+            style="@style/back_icon"/>
+
+        <TextView
+            style="@style/head_tit"
+            android:text="有奖反馈"/>
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:gravity="right"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/mine_tip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有奖说明"
+                android:textSize="12sp"
+                android:textColor="#2c2c2c"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:background="@drawable/mine_recharge_input"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="15dp"
+        android:layout_margin="20dp"
+        android:gravity="top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/feedback_img"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+        <Button
+
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/mine_recharge_button"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:text="确定"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 我的 - 规库 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/page_wrp">
+
+    <!-- 顶部标题栏 -->
+    <LinearLayout style="@style/head_wrp">
+        <ImageView
+            android:id="@+id/back_mine"
+            style="@style/back_icon"/>
+
+        <TextView
+            style="@style/head_tit"
+            android:text="规库"/>
+
+        <Button
+            android:id="@+id/use_rules_library"
+            android:background="@drawable/mine_rules_btn"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:text="使用"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/rules_lv"
+            style="@style/lv_style"></ListView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 画规 - 规库列表 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@drawable/list_bottom_border">
+    <ImageView
+        android:id="@+id/radio_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@mipmap/radio"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:id="@+id/radio_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="1.名称：千位、百位相同时"/>
+
+        <TextView
+            android:id="@+id/radio_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#696969"
+            android:layout_marginTop="10dp"
+            android:text="2019-07-25 15:11"/>
+
+        <TextView
+            android:id="@+id/pre_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ea1720"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="最近10期出现"/>
+    </LinearLayout>
+</LinearLayout>

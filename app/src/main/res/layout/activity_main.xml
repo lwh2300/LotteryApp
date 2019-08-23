@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/page_wrp">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:context=".MainActivity">
+    </androidx.viewpager.widget.ViewPager>
+
+    <View style="@style/bottom_border"/>
+
+    <LinearLayout style="@style/tab_wrp">
+        <!-- tab- 江湖 -->
+        <com.lotteryapp.view.TabView
+            android:id="@+id/tab_menu1"
+            style="@style/tab_view"/>
+
+        <!-- tab- 关注 -->
+        <com.lotteryapp.view.TabView
+            android:id="@+id/tab_menu4"
+            style="@style/tab_view"/>
+
+        <!-- tab - AI画规 -->
+        <LinearLayout
+            style="@style/tab_view"
+            android:orientation="vertical"
+            android:id="@+id/tab_menu2">
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    style="@style/tab_icon"
+                    android:src="@mipmap/tab_draw" />
+                <TextView
+                    style="@style/tab_text"
+                    android:text="画规"/>
+        </LinearLayout>
+
+        <!-- tab - 消息 -->
+        <com.lotteryapp.view.TabView
+            android:id="@+id/tab_menu5"
+           style="@style/tab_view"/>
+
+        <!-- tab - 我的 -->
+        <com.lotteryapp.view.TabView
+            android:id="@+id/tab_menu3"
+           style="@style/tab_view"/>
+    </LinearLayout>
+</LinearLayout>

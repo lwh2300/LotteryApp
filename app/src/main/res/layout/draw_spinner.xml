@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 画规 - 下拉列表 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#BF000000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/seven_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="七星彩"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E6919090"/>
+
+        <TextView
+            android:id="@+id/five_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="排列五"/>
+
+    </LinearLayout>
+</RelativeLayout>

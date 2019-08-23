@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- tab - 画规 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/page_wrp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 七星彩 -->
+        <ListView
+            android:id="@+id/lv"
+            style="@style/lv_style">
+        </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ff"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+        <!-- 排列五 -->
+        <ListView
+            android:visibility="gone"
+            android:id="@+id/five_list"
+            style="@style/lv_style">
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/display_wrp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <!-- 返回 -->
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/back_white"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rune_detail_bg"/>
+
+        <!-- 七星彩/排列五 切换 -->
+        <LinearLayout
+            android:id="@+id/spinner_wrp"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/draw_bg"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/spinner_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:text="七星彩"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@mipmap/spinner_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+        <!-- 显示 -->
+        <TextView
+            android:id="@+id/show_item"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/draw_bg"
+            android:gravity="center"
+            android:text="100期"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textStyle="bold"
+            android:layout_marginRight="30dp"
+            android:textColor="#ffffff" />
+
+        <!-- 标注 -->
+        <TextView
+            android:id="@+id/tip_item"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/draw_bg"
+            android:gravity="center"
+            android:text="标注"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <!-- AI画规 -->
+        <LinearLayout
+            android:id="@+id/draw"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/rune_detail_bg">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/draw_ai"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="画规"
+                android:gravity="center"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <!-- 规库 -->
+        <LinearLayout
+            android:id="@+id/draw_history_item"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rune_detail_bg"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="30dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/draw_history"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="规库"
+                android:gravity="center"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+        </RelativeLayout>
+        <!-- AI画规工具栏 -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/context"
+            style="@style/draw_tool_wrp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:id="@+id/tool_wrp"
+                style="@style/tool_wrp">
+
+                <LinearLayout
+                    android:id="@+id/del_line"
+                    style="@style/draw_tool_item">
+                    <ImageView
+                        style="@style/draw_tool_icon"
+                        android:src="@mipmap/draw_del_line"/>
+
+                    <TextView
+                        style="@style/draw_tool_text"
+                        android:text="删线"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/color_btn"
+                    style="@style/draw_tool_item">
+                    <View
+                        style="@style/draw_tool_icon"
+                        android:background="@drawable/color_radius"/>
+
+                    <TextView
+                        style="@style/draw_tool_text"
+                        android:text="颜色"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/text_btn"
+                    style="@style/draw_tool_item">
+                    <ImageView
+                        style="@style/draw_tool_icon"
+                        android:src="@mipmap/draw_add_text"/>
+
+                    <TextView
+                        style="@style/draw_tool_text"
+                        android:text="写字"/>
+                </LinearLayout>
+
+                <LinearLayout style="@style/draw_tool_item">
+                    <ImageView
+                        style="@style/draw_tool_icon"
+                        android:src="@mipmap/draw_clear"/>
+
+                    <TextView
+                        style="@style/draw_tool_text"
+                        android:text="清空"/>
+                </LinearLayout>
+
+                <LinearLayout style="@style/draw_tool_item">
+                    <ImageView
+                        style="@style/draw_tool_icon"
+                        android:src="@mipmap/draw_back"/>
+
+                    <TextView
+                        style="@style/draw_tool_text"
+                        android:text="上一步"/>
+                </LinearLayout>
+
+                <LinearLayout style="@style/draw_tool_item">
+                    <ImageView
+                        style="@style/draw_tool_icon"
+                        android:src="@mipmap/draw_go"/>
+
+                    <TextView
+                        style="@style/draw_tool_text"
+                        android:text="下一步"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 颜色栏 -->
+            <LinearLayout
+                android:id="@+id/color_tool"
+                android:visibility="gone"
+                style="@style/tool_wrp">
+                <LinearLayout style="@style/draw_tool_item">
+                    <View
+                        style="@style/draw_tool_icon"
+                        android:background="@drawable/color_radius"/>
+
+                    <TextView
+                        style="@style/draw_tool_text"
+                        android:text="默认"/>
+                </LinearLayout>
+                <LinearLayout style="@style/draw_tool_item">
+                    <View
+                        style="@style/draw_tool_icon"
+                        android:background="@drawable/color_radius_yellow"/>
+
+                    <TextView
+                        style="@style/draw_tool_text"
+                        android:text="黄"/>
+                </LinearLayout>
+                <LinearLayout style="@style/draw_tool_item">
+                    <View
+                        style="@style/draw_tool_icon"
+                        android:background="@drawable/color_radius_orange"/>
+
+                    <TextView
+                        style="@style/draw_tool_text"
+                        android:text="橙"/>
+                </LinearLayout>
+                <LinearLayout style="@style/draw_tool_item">
+                    <View
+                        style="@style/draw_tool_icon"
+                        android:background="@drawable/color_radius_green"/>
+
+                    <TextView
+                        style="@style/draw_tool_text"
+                        android:text="绿"/>
+                </LinearLayout>
+                <LinearLayout style="@style/draw_tool_item">
+                    <View
+                        style="@style/draw_tool_icon"
+                        android:background="@drawable/color_radius_purple"/>
+
+                    <TextView
+                        style="@style/draw_tool_text"
+                        android:text="紫"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/close_color"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/draw_close_color"/>
+            </LinearLayout>
+
+            <!-- 文字栏 -->
+            <LinearLayout
+                android:id="@+id/text_tool"
+                android:visibility="gone"
+                style="@style/tool_wrp">
+                <LinearLayout style="@style/draw_tool_item1">
+                    <ImageView
+                        style="@style/draw_tool_icon"
+                        android:src="@mipmap/draw_write"/>
+
+                    <TextView
+                        style="@style/draw_tool_text"
+                        android:text="编辑"/>
+                </LinearLayout>
+                <LinearLayout style="@style/draw_tool_item1">
+                    <ImageView
+                        style="@style/draw_tool_icon"
+                        android:src="@mipmap/draw_del_text"/>
+
+                    <TextView
+                        style="@style/draw_tool_text"
+                        android:text="删除"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_height="1dp"
+                    style="@style/draw_tool_item"/>
+
+                <ImageView
+                    android:id="@+id/close_text"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/draw_close_color"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CC919090"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    style="@style/draw_tool_btn"
+                    android:text="AI画规"/>
+
+                <TextView
+                    android:id="@+id/draw_close_btn"
+                    style="@style/draw_tool_close_btn"
+                    android:text="关闭"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

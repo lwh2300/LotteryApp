@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 我的 - 账单列表 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@drawable/list_bottom_border">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/bill_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingBottom="5dp"
+            android:text="充值"/>
+
+        <TextView
+            android:id="@+id/bill_time"
+            style="@style/time_style"
+            android:text="7月29日 08：09"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="right"
+        android:text="1535"/>
+</LinearLayout>

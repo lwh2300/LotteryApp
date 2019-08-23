@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 底部导航栏 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout style="@style/tab_frameLayout">
+        <ImageView
+            android:id="@+id/iv_icon"
+            style="@style/tab_icon"
+            tools:src="@mipmap/tab_runescape" />
+
+        <ImageView
+            android:id="@+id/iv_icon_select"
+            style="@style/tab_icon"
+            tools:src ="@mipmap/tab_runescape_select"/>
+    </FrameLayout>
+
+    <TextView
+
+        android:id="@+id/tv_title"
+        style="@style/tab_text"
+        android:text="江湖"/>
+</LinearLayout>
